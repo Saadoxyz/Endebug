@@ -245,8 +245,9 @@ Pull requests for new features, bug fixes, or performance improvements are welco
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6EE7B7&center=true&vCenter=true&width=600&lines=🔐+ENDEBUG+-+Python+Encryption+Toolkit;Your+Privacy+Matters+%7C+Encrypt+Everything;Secure+%7C+Simple+%7C+Fast+%7C+Open+Source">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6EE7B7&center=true&width=600&lines=🔐+ENDEBUG+-+Python+Encryption+Toolkit;Your+Privacy+Matters+%7C+Encrypt+Everything;Secure+%7C+Simple+%7C+Fast+%7C+Open+Source" />
 </p>
+
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=saadoxyz&show_icons=true&theme=radical" alt="Saad's GitHub stats"/>
