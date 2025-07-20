@@ -6,10 +6,10 @@ Sure! Here's a professionally structured and detailed `README.md` for your Pytho
 # 🔐 ENDEBUG - Python Encryption & Decryption Utility
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
-[![License](https://img.shields.io/github/license/your-repo/ENDebug?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/github/license/saadoxyz/ENDebug?style=flat-square)](LICENSE)
 [![Security](https://img.shields.io/badge/encryption-AES%20%7C%203DES%20%7C%20RSA-critical?style=flat-square&logo=veracrypt&color=green)]()
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-informational?style=flat-square&logo=linux)]()
-[![Stars](https://img.shields.io/github/stars/your-repo/ENDEBUG?style=flat-square&logo=github)]()
+[![Stars](https://img.shields.io/github/stars/saadoxyz/ENDEBUG?style=flat-square&logo=github)]()
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Encrypt+%26+Decrypt+Text+or+Files;AES+%7C+3DES+%7C+RSA+Support;Base64+%7C+Hash+%7C+KDF+Tools&center=true&width=500&height=45">
