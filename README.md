@@ -1,9 +1,5 @@
-Sure! Here's a professionally structured and detailed `README.md` for your Python encryption-decryption tool **ENDEBUG**, tailored for GitHub. It includes features, usage, technologies, SVG stats badges, and other enhancements.
 
----
-
-````markdown
-# 🔐 ENDEBUG - Python Encryption & Decryption Utility
+🔐 ENDEBUG - Python Encryption & Decryption Utility
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
 [![License](https://img.shields.io/github/license/saadoxyz/ENDebug?style=flat-square)](LICENSE)
