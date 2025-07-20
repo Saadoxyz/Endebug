@@ -202,12 +202,6 @@ python endebug.py --hash --algo sha512 --input data.csv
 
 ## 📊 GitHub Project Insights
 
-![Top Language](https://img.shields.io/github/languages/top/saadoxyz/ENDEBUG?style=for-the-badge)
-![Repo Size](https://img.shields.io/github/repo-size/saadoxyz/ENDEBUG?style=for-the-badge)
-
-![Last Commit](https://img.shields.io/github/last-commit/saadoxyz/ENDEBUG?style=for-the-badge)
-![Open Issues](https://img.shields.io/github/issues/saadoxyz/ENDEBUG?style=for-the-badge)
-![Contributors](https://img.shields.io/github/contributors/saadoxyz/ENDEBUG?style=for-the-badge)
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=saadoxyz&show_icons=true&theme=radical)
 
 ---
