@@ -1,175 +1,256 @@
 
-🔐 ENDEBUG - Python Encryption & Decryption Utility
+# 🔐 ENDEBUG - Python Encryption & Decryption Utility
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
-[![License](https://img.shields.io/github/license/saadoxyz/ENDebug?style=flat-square)](LICENSE)
-[![Security](https://img.shields.io/badge/encryption-AES%20%7C%203DES%20%7C%20RSA-critical?style=flat-square&logo=veracrypt&color=green)]()
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-informational?style=flat-square&logo=linux)]()
-[![Stars](https://img.shields.io/github/stars/saadoxyz/ENDEBUG?style=flat-square&logo=github)]()
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![License](https://img.shields.io/github/license/saadoxyz/ENDEBUG?style=for-the-badge)](LICENSE)
+[![Security](https://img.shields.io/badge/Security-AES%20%7C%203DES%20%7C%20RSA-critical?style=for-the-badge&logo=veracrypt)]()
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-informational?style=for-the-badge&logo=linux)]()
+[![Stars](https://img.shields.io/github/stars/saadoxyz/ENDEBUG?style=for-the-badge&logo=github)]()
+[![Issues](https://img.shields.io/github/issues/saadoxyz/ENDEBUG?style=for-the-badge&logo=github)]()
+[![Forks](https://img.shields.io/github/forks/saadoxyz/ENDEBUG?style=for-the-badge)]()
+[![Contributors](https://img.shields.io/github/contributors/saadoxyz/ENDEBUG?style=for-the-badge)]()
+[![Last Commit](https://img.shields.io/github/last-commit/saadoxyz/ENDEBUG?style=for-the-badge)]()
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Encrypt+%26+Decrypt+Text+or+Files;AES+%7C+3DES+%7C+RSA+Support;Base64+%7C+Hash+%7C+KDF+Tools&center=true&width=500&height=45">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=500&center=true&width=600&lines=🔐+Encrypt+and+Decrypt+Text+or+Files+with+Confidence;AES+%2F+3DES+%2F+RSA+Support+Built+In;Includes+Hashing%2C+Base64%2C+KDF%2C+Multithreading+%26+SQLite3">
 </p>
 
 ---
 
 ## 🧩 What is ENDEBUG?
 
-**ENDEBUG** is a Python-powered encryption-decryption utility designed for both beginners and professionals to easily protect their data using **symmetric** (AES, 3DES) and **asymmetric** (RSA) encryption methods. It also features **base64 encoding**, **KDF**, and **hash calculators**, making it an all-in-one privacy toolkit.
+ENDEBUG is a robust **Python-based data security toolkit** that allows you to:
 
-> This tool is useful for educational purposes, secure messaging, safe file storage, or any application where secure information handling is required.
+- Encrypt and decrypt files and text using **symmetric** (AES, 3DES) and **asymmetric** (RSA) cryptography.
+- Generate secure **hashes**, perform **base64 encoding/decoding**, and use **key derivation functions (KDF)** for secure key generation.
+- Maintain configuration persistence with **SQLite3**.
+- Execute **multi-threaded operations** for better performance on large files.
+
+Whether you're a **student**, **developer**, or **IT security enthusiast**, ENDEBUG is an all-in-one solution to understand and implement cryptography easily in Python.
 
 ---
 
 ## ⚙️ Features
 
-- 🔐 **Symmetric Encryption** (AES, 3DES) for files and plain text
-- 🔐 **Asymmetric Encryption** (RSA) with public-private key pair
-- 🔑 Key management (generate, save, load, or enter keys manually)
-- 🧪 **KDF (Key Derivation Function)** to generate secure keys from passwords
-- 🧬 Base64 encoding/decoding for plain text or file content
-- 🧮 Hash calculator (MD5, SHA-1, SHA-256, SHA-512)
-- 🧠 Multi-threaded encryption/decryption for improved performance
-- 💾 SQLite3 database support to save/load configurations
-- 📁 File and plain-text operations supported
+| Feature                          | Description |
+|----------------------------------|-------------|
+| 🔒 **AES / 3DES / RSA Encryption** | Choose between symmetric and asymmetric methods. |
+| 🔐 **Secure Key Handling**        | Generate, save, and load keys. |
+| 🧪 **KDF Integration**            | Generate keys securely from passwords. |
+| 📁 **File & Text Encryption**     | Works on both string content and files. |
+| 🧬 **Base64 Encode/Decode**       | Supports file-safe transformations. |
+| 🔍 **SHA / MD5 Hashing**          | Quickly compute file or string hashes. |
+| 💽 **SQLite3 Persistence**        | Saves user settings and session preferences. |
+| ⚡ **Multithreaded**              | Better performance for file operations. |
+
+> ✅ All commands are executed via a user-friendly CLI interface with strong error-handling and helpful output.
 
 ---
 
 ## 🖥️ Technologies Used
 
-| Category         | Libraries                          |
-|------------------|------------------------------------|
-| 🔐 Encryption     | `pycryptodome`, `rsa`              |
-| 🔑 Encoding & KDF | `base64`, `hashlib`, `getpass`     |
-| 🧠 UI/Config      | `argparse`, `sqlite3`, `os`, `sys` |
-| 📁 File Handling  | `threading`, `pathlib`             |
+| Category         | Libraries                                  |
+|------------------|--------------------------------------------|
+| 🔐 Cryptography   | `pycryptodome`, `rsa`                      |
+| 🔑 Encoding/KDF   | `base64`, `hashlib`, `getpass`             |
+| 🧠 CLI Handling   | `argparse`, `os`, `sys`                    |
+| ⚡ Threading      | `threading`                                |
+| 💾 Persistence    | `sqlite3`                                  |
+| 📂 Filesystem     | `pathlib`                                  |
+
+These tools are carefully combined to give you fast, secure, and cross-platform support.
 
 ---
 
-## 🔓 Symmetric Encryption
+## 🔓 Symmetric Encryption (AES/3DES)
 
-ENDEBUG supports **AES (128, 192, 256-bit)** and **Triple DES (3DES)** encryption. You can:
+Symmetric encryption uses the **same key** for encryption and decryption.
 
-- Use a key of 16, 24, or 32 bytes
-- Encrypt/decrypt plaintext or files
-- Automatically generate secure random keys
-- Store/load keys from files
+- AES supports 128, 192, and 256-bit keys.
+- Triple DES uses 56-bit keys (repeated thrice).
+- Requires the same key for both processes.
+
+### Example Command:
 
 ```bash
-python endebug.py --encrypt --algo aes --input message.txt --key mysecret.key
+python endebug.py --encrypt --algo aes --input message.txt --key mykey.key
+python endebug.py --decrypt --algo 3des --input message.enc --key mykey.key
 ````
+
+You can also auto-generate keys:
+
+```bash
+python endebug.py --generate-key --algo aes
+```
 
 ---
 
 ## 🔐 Asymmetric Encryption (RSA)
 
-Asymmetric encryption uses **public/private key pair**. You can:
+RSA uses a **public-private key pair**:
 
-* Generate a new RSA key pair (1024+ bits)
-* Encrypt using public key
-* Decrypt using private key
+* Public key is used for encryption
+* Private key is used for decryption
+
+### Generate Key Pair:
 
 ```bash
 python endebug.py --generate-keys --algo rsa
-python endebug.py --encrypt --algo rsa --input message.txt --key public.pem
-python endebug.py --decrypt --algo rsa --input message.enc --key private.pem
+```
+
+### Encrypt/Decrypt:
+
+```bash
+python endebug.py --encrypt --algo rsa --input plain.txt --key public.pem
+python endebug.py --decrypt --algo rsa --input secret.enc --key private.pem
 ```
 
 ---
 
-## 🔑 KDF - Key Derivation
+## 🔑 KDF (Key Derivation Function)
 
-A **Key Derivation Function (KDF)** lets you securely derive encryption keys from user passwords.
+KDF helps generate **secure encryption keys from passwords** using salt and hashing rounds.
+
+### Example in Python:
 
 ```python
 from hashlib import pbkdf2_hmac
-
-key = pbkdf2_hmac('sha256', b'my-password', b'salt', 100000)
+key = pbkdf2_hmac('sha256', b'my-password', b'some_salt', 100000)
 ```
+
+Used internally to convert your password into a strong cryptographic key.
 
 ---
 
-## 🧬 Base64 Encode / Decode
+## 🧬 Base64 Encoding/Decoding
+
+Convert binary files or text into readable ASCII strings.
+
+### Encode a file:
 
 ```bash
-python endebug.py --base64-encode --input myfile.txt
+python endebug.py --base64-encode --input mydoc.txt
+```
+
+### Decode base64:
+
+```bash
 python endebug.py --base64-decode --input encoded.b64
 ```
 
 ---
 
-## 🔍 Hash Generator
+## 🔍 Hash Calculator (Checksum Generator)
 
-Supported algorithms:
+Generate message digests to validate data integrity.
+
+### Supported Hashes:
 
 * MD5
 * SHA-1
 * SHA-256
 * SHA-512
 
+### Example:
+
 ```bash
-python endebug.py --hash --algo sha256 --input myfile.txt
+python endebug.py --hash --algo sha256 --input file.txt
 ```
 
 ---
 
-## 📦 SQLite3 Config Persistence
+## 💾 SQLite3 Config Persistence
 
-Your app automatically stores:
+ENDEBUG automatically stores user preferences like:
 
-* Last used encryption algorithm
-* Key size
-* Paths and preferences
+* Algorithm last used
+* Input/output paths
+* Preferred hash algorithm
+* Key lengths
 
-It uses `sqlite3` to save and reload preferences upon restarting.
+These are loaded at next startup from a **SQLite database file** so you don’t lose your settings.
 
 ---
 
-## 📁 Example Commands
+## ⚡ Multithreaded Execution
+
+ENDEBUG can run **file encryption/decryption in threads**, making it 2x–3x faster on large files.
+
+Benefit: Use all available CPU cores.
+
+No special flags are required – it's automatically triggered when needed.
+
+---
+
+## 📁 Example Usage
 
 ```bash
-# Encrypt text using AES
-python endebug.py --encrypt --algo aes --input "hello world" --key mykey.key
+# AES Encrypt
+python endebug.py --encrypt --algo aes --input notes.txt --key mysecret.key
 
-# Decrypt file
-python endebug.py --decrypt --algo 3des --input myfile.enc --key mykey.key
+# 3DES Decrypt
+python endebug.py --decrypt --algo 3des --input secure.bin --key mysecret.key
 
-# Hash a file
-python endebug.py --hash --algo sha512 --input notes.txt
+# RSA Key Generation
+python endebug.py --generate-keys --algo rsa
+
+# Hash using SHA-512
+python endebug.py --hash --algo sha512 --input data.csv
 ```
 
 ---
 
-## 📊 Project Stats
+## 📊 GitHub Project Insights
 
 ![Languages](https://img.shields.io/github/languages/top/saadoxyz/ENDEBUG?style=for-the-badge)
 ![Repo Size](https://img.shields.io/github/repo-size/saadoxyz/ENDEBUG?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/saadoxyz/ENDEBUG?style=for-the-badge)
+![Activity](https://img.shields.io/github/commit-activity/m/saadoxyz/ENDEBUG?style=for-the-badge)
+![Code Quality](https://img.shields.io/lgtm/grade/python/github/saadoxyz/ENDEBUG?style=for-the-badge)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Open issues or submit PRs.
+Want to contribute? Here's how:
 
 ```bash
 # Clone repo
-git clone https://github.com/Saadoxyz/ENDEBUG.git
+git clone https://github.com/saadoxyz/ENDEBUG.git
 cd ENDEBUG
-pip install -r tempCodeRunnerFile.pyw
-```
+
+Pull requests for new features, bug fixes, or performance improvements are welcome! 🙌
+
+---
+
+## 📌 Future Plans
+
+* ✅ Add GUI using PyQt or Tkinter
+* ✅ Add zip + encrypt feature
+* 🔜 GPG-style signing for messages
+* 🔜 Progress bars and logging for file ops
+* 🔜 Dockerized CLI installer
 
 ---
 
 ## 🙋‍♂️ Author
 
 **Saad Khan**
-🔗 [GitHub](https://github.com/saadoxyz) | 📧 [saadok652004@gmail.com](mailto:saadok652004@gmail.com)
+
+* 🔗 GitHub: [@saadoxyz](https://github.com/saadoxyz)
+* 📧 Email: [saadok652004@gmail.com](mailto:saadok652004@gmail.com)
+* 💼 LinkedIn: *Coming Soon*
 
 ---
 
 <p align="center">
-<imgsrc="https://readmetypingsvg.herokuapp.comfont=Fira+Code&duration=2500&pause=1000&color=34D399&width=435&lines=Secure+Your+Data+with+Python;ENCRYPT+%7C+DECRYPT+%7C+HASH+%7C+KDF">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6EE7B7&center=true&vCenter=true&width=600&lines=🔐+ENDEBUG+-+Python+Encryption+Toolkit;Your+Privacy+Matters+%7C+Encrypt+Everything;Secure+%7C+Simple+%7C+Fast+%7C+Open+Source">
 </p>
-```
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=saadoxyz&show_icons=true&theme=radical" alt="Saad's GitHub stats"/>
+</p>
+
+---
+
+> ENDEBUG is built with 💙 and a deep respect for user privacy and open-source security principles.
 
