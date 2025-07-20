@@ -205,15 +205,14 @@ python endebug.py --hash --algo sha512 --input data.csv
 ![Languages](https://img.shields.io/github/languages/top/saadoxyz/ENDEBUG?style=for-the-badge)
 ![Repo Size](https://img.shields.io/github/repo-size/saadoxyz/ENDEBUG?style=for-the-badge)
 ![Activity](https://img.shields.io/github/commit-activity/m/saadoxyz/ENDEBUG?style=for-the-badge)
-![Code Quality](https://img.shields.io/lgtm/grade/python/github/saadoxyz/ENDEBUG?style=for-the-badge)
 
 ---
 
-## 🤝 Contributing
+##🤝 Contributing
 
 Want to contribute? Here's how:
 
-```bash
+``bash
 # Clone repo
 git clone https://github.com/saadoxyz/ENDEBUG.git
 cd ENDEBUG
